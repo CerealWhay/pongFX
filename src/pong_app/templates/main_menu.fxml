@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: black;"
+            xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pong_app.controllers.mainMenuController">
+    <ImageView fitHeight="704.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@../assets/pong_main.jpg"/>
+    </ImageView>
+    <Button fx:id="playButton" layoutX="434.0" layoutY="279.0" mnemonicParsing="false" prefHeight="105.0"
+            prefWidth="332.0" style="-fx-background-color: #96ffe7#96ffe7; -fx-border-radius: 0;" text="PLAY 1x1">
+        <effect>
+            <DropShadow blurType="GAUSSIAN" height="255.0" radius="127.0" spread="0.23" width="255.0">
+                <color>
+                    <Color red="0.10588235408067703" green="1.0" blue="1.0"/>
+                </color>
+            </DropShadow>
+        </effect>
+        <font>
+            <Font size="35.0"/>
+        </font>
+    </Button>
+</AnchorPane>
